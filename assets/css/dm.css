@@ -21,8 +21,8 @@ canvas {
 }
 
 @font-face {
-    font-family: "Dash Font";
-    src: url('../fonts/gunshipital.ttf') format("truetype");
+    font-family: "Lato";
+    src: url('../fonts/Lato-Bold.ttf') format("truetype");
 }
 
 .hudContainer {
