@@ -1,11 +1,11 @@
-// Copyright (c) 2017 The Dash Network
+// Copyright (c) 2017 The Komodo Network
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-var Dash = Dash || {};
+var Komodo = Komodo || {};
 
-// Dash Blockchain Visualizer using Three.js, Cannon.js and Insight API
-Dash.Machine = function () {
+// Komodo Blockchain Visualizer using Three.js, Cannon.js and Insight API
+Komodo.Machine = function () {
     var _this = this;
 
     this.Set = new this.set(this);
@@ -110,7 +110,7 @@ Dash.Machine = function () {
     }
 };
 
-Dash.Machine.prototype.set = function (_this) {
+Komodo.Machine.prototype.set = function (_this) {
 
     var orbitControl = null;
     this.spotLight = new THREE.SpotLight(0xffffff);
@@ -264,7 +264,7 @@ Dash.Machine.prototype.set = function (_this) {
 };
 
 // Object Manager
-Dash.Machine.prototype.objects = function (_this) {
+Komodo.Machine.prototype.objects = function (_this) {
 
     var ObjType = {Tx: 0, Block: 1};
 
@@ -560,7 +560,7 @@ Dash.Machine.prototype.objects = function (_this) {
     }
 };
 
-Dash.Machine.prototype.materials = function (_this) {
+Komodo.Machine.prototype.materials = function (_this) {
 
     var shading = THREE.SmoothShading;
     var imgBlock = document.createElement('img');
@@ -620,7 +620,7 @@ Dash.Machine.prototype.materials = function (_this) {
             font: "bold " + (0.15 * 256) + "px Arial",
             align: 'center',
             fillStyle: '#ffffff'
-            //font: "36px Dash Font"
+            //font: "36px Komodo Font"
         });
     };
 
@@ -654,7 +654,7 @@ Dash.Machine.prototype.materials = function (_this) {
     }
 };
 
-Dash.Machine.prototype.settings = function (_this) {
+Komodo.Machine.prototype.settings = function (_this) {
 
     var qualityLevels = {lo: 0, mid: 1, hi: 2};
 
@@ -728,7 +728,7 @@ Dash.Machine.prototype.settings = function (_this) {
     }
 };
 
-Dash.Machine.prototype.ui = function (_this) {
+Komodo.Machine.prototype.ui = function (_this) {
 
     var UIStates = {loading: 0, play: 1};
     var UIState = UIStates.loading;
@@ -803,7 +803,7 @@ Dash.Machine.prototype.ui = function (_this) {
     }
 };
 
-Dash.Machine.prototype.audio = function (_this) {
+Komodo.Machine.prototype.audio = function (_this) {
 
     var audioBias = 0.2;
     this.Mute = true;
@@ -879,7 +879,7 @@ Dash.Machine.prototype.audio = function (_this) {
     ]);
 };
 
-Dash.Machine.prototype.net = function (_this) {
+Komodo.Machine.prototype.net = function (_this) {
 
     var lastConnected;
 
